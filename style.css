@@ -1,0 +1,522 @@
+html {
+  font-family: "Lato", "Arial", sans-serif;
+}
+body {
+  width: 100vw;
+}
+header {
+  background-image: linear-gradient(
+      rgba(0, 242, 96, 0.4),
+      rgba(7, 117, 230, 0.3)
+    ),
+    url(./images/header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.section {
+  padding: 30px 0 60px 0;
+}
+nav {
+  background: black;
+  width: 100%; /*pour que la navbar prenne toute la largeur*/
+  display: flex; /*pour que tout s'aligne*/
+  align-items: center; /*pour que tout s'aligne, au centre) */
+  justify-content: space-around; /*pour avoir un épassement pour que les éléments ne soit pas collés) */
+}
+nav h1 {
+  font-family: "warnesregular";
+  color: white;
+  padding-left: 7%;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-right: 50px;
+}
+.nav-links li {
+  margin: 10px; /*écart entre les catégories*/
+  overflow: hidden; /*cacher le 2e élément qui sert au Responsive*/
+}
+.nav-links a {
+  text-decoration: none; /*enlever le surlignage et tout de l'hyperlien*/
+  /*position: relative; permet de pas voir les catégories quand l'écran se rétrécit*/
+  display: block;
+}
+.nav-links .categorie {
+  color: white;
+  font-size: 20px;
+}
+.nav-links .categorie:hover {
+  color: red;
+}
+
+/*Bandeau avec image de la mer et les 2 boutons*/
+.home-title {
+  position: absolute;
+  top: 30%;
+  left: 12.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-title h1 {
+  font-size: 340%;
+  color: #fff;
+}
+
+.home-title h1 span {
+  font-weight: 700;
+}
+
+.home-title p {
+  color: #fff;
+}
+.our-island-styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: turquoise;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  box-shadow: white;
+  transition: all 0.7s ease;
+}
+.our-island-styled:hover {
+  background-color: #04a8d1;
+  transition: all 0.7s ease;
+  color: white;
+}
+
+.contactez-styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: transparent;
+  border: solid 1px white;
+  transition: all 0.7s ease;
+}
+.contactez-styled:hover {
+  background-color: #04a8d1;
+  transition: all 0.7s ease;
+}
+h2 {
+  text-align: center;
+}
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #05cdfe;
+  width: 100px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bloc-pres {
+  display: flex;
+  padding-left: 7%;
+  margin-right: 5%;
+  text-align: left;
+  margin-top: 5%;
+}
+.bloc-pres img {
+  max-width: 40%;
+}
+.flex-container {
+  width: auto;
+}
+
+table i {
+  color: red;
+  font-size: 30px;
+  padding-left: 1em;
+}
+table i:hover {
+  transition: 0.5s ease;
+  transform: translateX(20px);
+}
+table td {
+  padding-left: 2em;
+  text-size-adjust: 50px;
+}
+/*Notre ile*/
+
+.flex-container {
+  display: flex;
+  background-color: turquoise;
+}
+
+.flex-container div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 15px;
+  width: 100vw;
+  text-align: center;
+  border-radius: 5%;
+}
+.flex-container img {
+  width: 60%;
+}
+/*Galerie photos*/
+#photos {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.photos-lignes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 110px;
+  margin-left: 110px;
+  padding-top: 25px;
+  gap: 25px;
+  background-position: center;
+}
+
+/* photo ligne 1 */
+
+#photos-ligne1-gauche {
+  width: 34%;
+  height: 300px;
+  background-image: url(./images/galerie/femmes-zanzibar.jpg);
+  background-position: center;
+  background-size: center;
+  border-radius: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 0px 0px 7px gray;
+}
+
+#photos-ligne1-droite {
+  background-image: url(./images/galerie/plage-zanzibar.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 66%;
+  height: 300px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 0px 0px 7px gray;
+}
+
+/* photos ligne 2 */
+
+#photos-ligne2-gauche {
+  background-image: url(./images/galerie/epices-zanzibar.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  height: 300px;
+  width: 40%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 0px 0px 7px gray;
+}
+
+#photos-ligne2-milieu {
+  background-image: url(./images/galerie/village-pecheur-zanzibar.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  height: 300px;
+  width: 28%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 0px 0px 7px gray;
+}
+
+#photos-ligne2-droite {
+  background-image: url(./images/galerie/safari-blue.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  height: 300px;
+  width: 32%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 0px 0px 7px gray;
+}
+
+.galeries-titre {
+  color: white;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+#photos h1 {
+  text-align: center;
+}
+
+/*Les témoignages d'utlisateurs*/
+.temoignages {
+  display: flex;
+  padding: 0 15px;
+}
+.avis-clients {
+  width: 30%;
+  padding: 0 15px;
+}
+.avis-clients img {
+  text-align: end;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.clients {
+  background-image: url(../images/the-paysage.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Nos séjours*/
+#sejour {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#sejour .bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  border: 2px #e2e2e2 solid;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+#sejour .bloc-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  border: 2px #e2e2e2 solid;
+  top: 10px;
+  right: 30px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#sejour .bloc-2 h2 {
+  color: black;
+}
+#sejour button {
+  background-color: #05a8d1;
+  border: 1px solid #05a8d1;
+  color: white;
+  border-radius: 5px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+
+#sejour button:hover {
+  background-color: #0ce0f5;
+  border: 1px solid #0ce0f5;
+}
+/*Contactez nous*/
+.contact-infos {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.champs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.carte {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.adress {
+  margin-left: 90px;
+}
+
+.contact-form1 {
+  display: flex;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-form2 {
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-message {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  background-color: #05a8d1;
+}
+/* Footer*/
+.footer {
+  background: black;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+/*Responsive*/
+@media screen and (max-width: 1200px) {
+  .nav{
+    position: absolute;
+  }
+  .contact-infos {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  .contact-form1 {
+    padding-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .champs {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  .carte {
+    padding-top: 20px;
+    width: 0 auto;
+    margin-left: 150px;
+    padding-bottom: 20px;
+     align-content: center;
+  }
+
+  .flex-container{
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  
+  .photos-lignes {
+    flex-direction: row;
+    padding: 0px;
+  }
+ 
+  .temoignages {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .temoignages-clients {
+    width: 60%;
+    padding: 0px;
+    margin: 0 auto;
+    
+  }
+  #sejour {
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+  }
+  
+  
+}
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+    flex-direction: row;
+    height: 40vh;
+    position: absolute;
+    padding-right: -15px;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .home-title {
+    top: 50%;
+    left: 10%;
+  }
+  .bloc-pres img {
+    position: absolute;
+    max-width: 100%;
+    opacity: 50%;
+    z-index: -1;
+  }
+  .photos-lignes {
+    flex-direction: column;
+    padding: 0px;
+  }
+  #photos-ligne1-gauche {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #photos-ligne1-droite {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #photos-ligne2-gauche {
+    margin-top: 20px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0px;
+  }
+  #photos-ligne2-milieu {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #photos-ligne2-droite {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+ 
+}
